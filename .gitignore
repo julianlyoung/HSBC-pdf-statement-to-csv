@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.claude/
+
+# Project folders (may contain sensitive data)
+uploads/
+output/
+logs/
+example/
+examples/
+
+# Sensitive files
+*.pdf
+*.csv
+!requirements.txt
+
+# Node (from initial testing - not needed)
+node_modules/
+package.json
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+nul
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+*.log

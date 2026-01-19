@@ -33,16 +33,10 @@ class Transaction:
         expenses = ''
 
         if self.paid_in and self.paid_in > 0:
-            if self.paid_in >= 1000:
-                income = f'"£{self.paid_in:,.2f}"'
-            else:
-                income = f'£{self.paid_in:.2f}'
+            income = f'£{self.paid_in:.2f}'
 
         if self.paid_out and self.paid_out > 0:
-            if self.paid_out >= 1000:
-                expenses = f'"-£{self.paid_out:,.2f}"'
-            else:
-                expenses = f'-£{self.paid_out:.2f}'
+            expenses = f'-£{self.paid_out:.2f}'
 
         return {
             'Date': self.date.strftime('%d/%m/%Y'),
